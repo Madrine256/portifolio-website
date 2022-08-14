@@ -1,0 +1,504 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0e17;
+  color: #fffffe;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #a7a9be;
+}
+
+section {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  scroll-behavior: smooth;
+  padding: 3rem;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
+  background-color: #0f0e17;
+  z-index: 99;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  color: #fffffe;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a {
+  color: #fffffe;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+nav ul li:hover {
+  background-color: #ff8906;
+}
+
+.signup {
+  background-color: #ff8906;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.signup a {
+  color: #fffffe;
+  text-transform: uppercase;
+}
+
+.signup:hover {
+  opacity: .3;
+}
+
+.overlay {
+  overflow: hidden;
+}
+
+.overlay .modal-container {
+  position: absolute;
+  width: 50%;
+  height: 300px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.overlay .modal-container span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: .4rem;
+  width: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay .modal-container span:hover {
+  background-color: #ff8906;
+  color: #fffffe;
+}
+
+.overlay .modal-container .modal-body form .input-group {
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.overlay .modal-container .modal-body form .input-group label {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.overlay .modal-container .modal-body form .input-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+.overlay .modal-container .modal-body form .btns {
+  float: right;
+}
+
+.overlay .modal-container .modal-body form .btns button {
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff8906;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.home-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1.4rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.home-container .content-left h1 {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-container .content-left p {
+  color: #a7a9be;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.home-container .content-left .signup {
+  width: 50rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.home-container .content-right img {
+  width: 300px;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+#courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+}
+
+#courses .course-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#courses .course-container .course-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[2];
+      grid-template-columns: repeat(2, 350px);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+
+#courses .course-container .course-content .card {
+  width: 300px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 2px 2px 4px grey;
+          box-shadow: 2px 2px 4px grey;
+  border-radius: 10px;
+}
+
+#courses .course-container .course-content .card .icon-image i {
+  font-size: 4rem;
+}
+
+#courses .course-container .course-content .card .card-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+#courses .course-container .course-content .card .card-body h1 {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.fa-html5 {
+  color: blue;
+}
+
+.fa-css3-alt {
+  color: pink;
+}
+
+.fa-js {
+  color: yellow;
+}
+
+.fa-php {
+  color: darkblue;
+}
+
+.about-container {
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container .about-me {
+  text-align: center;
+  padding: 1rem;
+}
+
+.about-container .about-me h1 {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.about-container .about-me p {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.projects-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[2];
+      grid-template-columns: repeat(2, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.projects-container > div {
+  -webkit-box-shadow: 0px 4px 8px grey;
+          box-shadow: 0px 4px 8px grey;
+  height: 300px;
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  line-height: 1.7;
+}
+
+.projects-container > div span {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #ff8906;
+}
+
+.projects-container > div h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.projects-container > div .range {
+  width: 100%;
+  height: 10px;
+  background-color: #fffffe;
+  border-radius: 10px;
+  position: relative;
+}
+
+.projects-container > div .range .range-indicator {
+  position: absolute;
+  left: 0;
+  background-color: #ff8906;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.projects-container > div .range .html {
+  width: 80%;
+}
+
+.projects-container > div .range .css {
+  width: 60%;
+}
+
+.projects-container > div .range .js {
+  width: 40%;
+}
+
+.projects-container > div .range .php {
+  width: 10%;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #e53170;
+}
+
+.footer a:active {
+  color: #f25f4c;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul li {
+    padding: .4rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .signup {
+    padding: .6rem;
+    border-radius: 5px;
+  }
+  .home-container {
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-container .content-left h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .home-container .content-left p {
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+  }
+  .home-container .content-left .signup {
+    width: 30rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  .home-container .content-right img {
+    width: 100%;
+  }
+  #courses .course-container {
+    margin-top: 10rem;
+  }
+  #courses .course-container .course-content {
+    -ms-grid-columns: (450px)[1];
+        grid-template-columns: repeat(1, 450px);
+  }
+  #courses .course-container .course-content .card {
+    width: 450px;
+  }
+  .projects-container {
+    -ms-grid-columns: (450px)[1];
+        grid-template-columns: repeat(1, 450px);
+    margin-bottom: 10rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
