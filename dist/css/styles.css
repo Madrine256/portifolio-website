@@ -116,9 +116,14 @@ nav ul li:hover {
 
 .overlay {
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.overlay .modal-container {
+.modal-container {
   position: absolute;
   width: 50%;
   height: 300px;
@@ -139,9 +144,10 @@ nav ul li:hover {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  display: none;
 }
 
-.overlay .modal-container span {
+.modal-container span {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -154,33 +160,33 @@ nav ul li:hover {
   overflow: hidden;
 }
 
-.overlay .modal-container span:hover {
+.modal-container span:hover {
   background-color: #ff8906;
   color: #fffffe;
 }
 
-.overlay .modal-container .modal-body form .input-group {
+.modal-container .modal-body form .input-group {
   max-width: 300px;
   padding: 1rem;
 }
 
-.overlay .modal-container .modal-body form .input-group label {
+.modal-container .modal-body form .input-group label {
   text-transform: capitalize;
   font-weight: bolder;
 }
 
-.overlay .modal-container .modal-body form .input-group input {
+.modal-container .modal-body form .input-group input {
   width: 100%;
   padding: 1rem;
   border-radius: 10px;
   outline: none;
 }
 
-.overlay .modal-container .modal-body form .btns {
+.modal-container .modal-body form .btns {
   float: right;
 }
 
-.overlay .modal-container .modal-body form .btns button {
+.modal-container .modal-body form .btns button {
   padding: 1rem;
   border-radius: 10px;
   font-size: 1rem;
